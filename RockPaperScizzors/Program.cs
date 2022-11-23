@@ -92,7 +92,7 @@ namespace ROCKPAPERSCISSORS
                             break;
                     }
                     // write the scores
-                    Console.WriteLine("SCORES: Player:" + scorePlayer + " - CPU:" + scoreCPU);
+                    Console.WriteLine("\n\nScores: \tPLAYER:\t{0}\tCPU: \t{1}", scorePlayer, scoreCPU);
                 }
                 if (scorePlayer == 3)
                 {
@@ -109,6 +109,7 @@ namespace ROCKPAPERSCISSORS
                 loop = loop.ToUpper();
                 if (loop == "Y")
                 {
+                    Console.Clear();
                     playAgain = true;
                 }
                 else if (loop == "N")
